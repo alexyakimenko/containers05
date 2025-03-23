@@ -200,7 +200,7 @@ EXPOSE 80
 
 ```sh
 docker image build -t apache2-php-mariadb .
-docker container run -d --name apache2-php-mariadb apache2-php-mariadb
+docker container run -d -p 80:80 --name apache2-php-mariadb apache2-php-mariadb
 ```
 
 Проверяю наличие сайта WordPress в папке `/var/www/html/`
